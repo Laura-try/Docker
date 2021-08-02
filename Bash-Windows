@@ -1,0 +1,9 @@
+#!/bin/bash
+echo Image wird heruntergeladen und anschliessend starten
+sudo docker pull laurahawk/calendar-0108 
+
+sudo docker run -e DISPLAY=$ip:0 -v /tmp/.X11-unix:/tmp/.X11-unix -v dockerfolder:/dockerfolder laurahawk/calendar-0108
+// sudo chmod +x test.sh
+chmod +x test.sh
+
+./startDockerCalendarWindows.sh
