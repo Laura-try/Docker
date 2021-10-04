@@ -1,13 +1,9 @@
 # Docker
 
 
-to build:
-docker build -t mycal .
+Ein kleines Projekt um sich in Docker einzuarbeiten.
+Es wurde eine Terminkalendar App in Python implementiert.
+Zusätzlich wurde eine Bash geschrieben, um die App mit Docker auszuführen.
+Das Ganze wurde in der Vorlesung Rechnernetze & Betriebssystem an der HAWK durchgeführt.
 
-to run:
-  for MAC:
-  
-    ip=$(ifconfig en0 | grep inet | awk '$1=="inet" {print $2}')
-    xhost + $ip
-  docker pull laurahawk/calendar-0108
-  docker run -e DISPLAY=$ip:0 -v /tmp/.X11-unix:/tmp/.X11-unix -v dockerfolder:/dockerfolder laurahawk/calendar-0108
+
